@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El primer Script</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--Etiqueta para indicar y registrar el cuerpo de la pagina-->
+<body>
+
+   <section>
+      <div id="calculadora">
+
+         <div id="display">
+         </div>
+
+         <div id="control">
+            <div onclick="corregir()">Retr</div>
+            <div onclick="darCE()">CE</div>
+            <div onclick="darC()">C</div>
+         </div>
+
+         <div id="botones">
+            
+            <div onclick="mostrarEnDisplay(this.textContent)" class="numeros">7</div>
+            <div onclick="mostrarEnDisplay(this.textContent)" class="numeros">8</div>
+            <div onclick="mostrarEnDisplay(this.textContent)" class="numeros">9</div>
+            <div onclick="guardarOperador(this.textContent)" class="operadores">/</div>
+            <div onclick="raiz()" class="operadores">Raiz</div>
+            <div onclick="mostrarEnDisplay(this.textContent)" class="numeros">4</div>
+            <div onclick="mostrarEnDisplay(this.textContent)" class="numeros">5</div>
+            <div onclick="mostrarEnDisplay(this.textContent)" class="numeros">6</div>
+            <div onclick="guardarOperador(this.textContent)" class="operadores">*</div>
+            <div onclick="guardarOperador(this.textContent)" class="operadores">%</div>
+            <div onclick="mostrarEnDisplay(this.textContent)" class="numeros">1</div>
+            <div onclick="mostrarEnDisplay(this.textContent)" class="numeros">2</div>
+            <div onclick="mostrarEnDisplay(this.textContent)" class="numeros">3</div>
+            <div onclick="guardarOperador(this.textContent)" id="resta" class="operadores">-</div>
+            <div onclick="inverso()" class="numeros">1/x</div>
+            <div onclick="mostrarEnDisplay(this.textContent)" class="numeros">0</div>
+            <div onclick="signo()" >+/-</div>
+            <div onclick="mostrarEnDisplay(this.textContent)" class="numeros">.</div>
+            <div onclick="guardarOperador(this.textContent)" id="suma" class="operadores" >+</div>
+            <div onclick="result()"  id="resultado">=</div>
+
+         </div>
+
+      </div>
+
+   </section>
+
+ <script src="index.js"></script>  
+</body>
+</html>
