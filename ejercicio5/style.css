@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+
+    position:relative
+}
+
+
+div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+img{
+    width: 100px;
+}
+i{
+    display: inline;
+    width: 80%;
+}
+
+#principal{
+ 
+    width:400px
+}
